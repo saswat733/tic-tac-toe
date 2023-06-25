@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #250925;
+    color: white;
+    height: 92px;
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0 auto;
+    
+}
+nav ul li{
+    padding: 30px;
+    /* margin: 20px; */
+    font-size: 2em;
+    font-family: 'Caprasimo', cursive;
+}
+
+.gamecontainer{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.box{
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.game-info{
+    /* border: 2px solid black; */
+    margin: 2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.game-info div{
+    display: flex;
+    flex-direction: column;
+}
+.game-info span{
+    font-size: 2em;
+    font-weight: 700;
+}
+#reset{
+    border: none;
+    padding: 0.8em;
+    border-radius: 2em;
+    margin: 0.5em;
+    font-weight: 900;
+}
+#reset:hover{
+    background-color: pink; 
+}
+.b-r{
+    border-right: 0;
+}
+.b-t{
+    border-top: 0;
+}
+.b-l{
+    border-left: 0;
+}
+.b-b{
+    border-bottom: 0;
+}
+
+@media screen and (max-width:400px) {
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    .game-info{
+        /* border: 2px solid black; */
+        margin: 2em;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+    }
+    .game-info h1{
+        font-size: 30px;
+    }
+    .game-info span{
+        font-size: 2em;
+        font-weight: 700;
+        color: #250925;
+    }
+}
